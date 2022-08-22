@@ -8,3 +8,8 @@ body {
 .header-left-image {
     margin-bottom: -20px;
 }
+
+.input::placeholder {
+    color: rgb(238, 236, 236) !important;
+    opacity: 1;
+    }
