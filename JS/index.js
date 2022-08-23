@@ -77,3 +77,54 @@ document.getElementById("player-calculate").addEventListener ('click', function 
    
 })
 
+// Calcutating the TOTAL price 
+document.getElementById("total-calculate").addEventListener('click', function () {
+    // find the manager input value 
+    const managerInputElement= document.getElementById("manager-input")
+    // Get value & convert manager value to parseFloat 
+    const managerInputValue= parseFloat(managerInputElement.value)
+   
+
+    // check is manager input value is Number or not 
+    if(isNaN(managerInputValue)) {
+        alert ('Please Enter Manager Price in Number')
+       }
+    // clear the value 
+    managerInputElement.value=''
+
+    ///// find the coach input value
+    const coachInputElement= document.getElementById("coach-input")
+     // Get value & convert manager value to parseFloat 
+     const coachInputValue= parseFloat(coachInputElement.value)
+
+         // clear the value 
+    coachInputElement.value=''
+
+     // check is Coach input value is Number or not 
+    if(isNaN(coachInputValue)) {
+        alert ('Please Enter Coach Price in Number')
+       }
+
+      //get player expance value
+      const playerExpensesElement =document.getElementById("player-expenses")
+      const playerExpensesValue= parseFloat(playerExpensesElement.innerText)
+      console.log(playerExpensesValue)
+      
+
+
+// Calculate the ultimate tool Total
+const ultimateTotal=playerExpensesValue+ managerInputValue+coachInputValue;
+
+///get the Total holder element 
+const totalHolderElement= document.getElementById("total-holder")
+ totalHolderElement.innerText=''
+ totalHolderElement.innerText=ultimateTotal
+
+
+
+
+
+
+    
+    
+})
