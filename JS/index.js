@@ -118,13 +118,13 @@ const ultimateTotal=playerExpensesValue+ managerInputValue+coachInputValue;
 ///get the Total holder element 
 const totalHolderElement= document.getElementById("total-holder")
  totalHolderElement.innerText=''
- totalHolderElement.innerText=ultimateTotal
-
-
-
-
-
-
-    
+ totalHolderElement.innerText=ultimateTotal 
     
 })
+
+//Adding a Extra Function 
+
+function titleColorChange() {
+    const headingTitleElement= document.getElementById("heading-title")
+    headingTitleElement.style.setProperty('color', 'yellow', 'important');
+}
