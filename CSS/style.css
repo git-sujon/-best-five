@@ -10,6 +10,15 @@ body {
 }
 
 .input::placeholder {
-    color: rgb(238, 236, 236) !important;
+    color: rgb(151, 151, 151) !important;
     opacity: 1;
-    }
+}
+.football-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+
+

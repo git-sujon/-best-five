@@ -24,25 +24,25 @@
     <header class="bg-black text-white  text-center">
         <div class="row">
             <!-- Starting part  -->
-            <div class="col-3 mt-5">
+            <div class="col-3 mt-5 d-none d-lg-block">
                 <div class="mt-5 "> <img src="./image/icons/hearder-player.png" alt=""
                         class="img-fluid header-left-image"></div>
             </div>
             <!-- Middle part -->
-            <div class="col-6  my-5 d-flex justify-content-center justify-align-center">
+            <div class="col-12 col-lg-6   my-5 d-flex justify-content-center justify-align-center">
                 <div class="container">
-                    <h1 class="display-1 fw-bold text-warning mt-5">Select Your Top Five Player</h1>
+                    <h1 class="display-1  fw-bold text-warning mt-5">Select Your Top Five Player</h1>
                     <p>Create your Greatest 5 footballers team & Calculate your cost for running your club. Each one of
                         player price is $1000 , manager cost is 2000 & Coach cost is 4000. Manage Your Club cost</p>
                 </div>
             </div>
             <!-- Right part  -->
-            <div class="col-3 ">
+            <div class="col-3 d-none d-lg-block ">
                 <div class="row">
                     <div class=" d-flex flex-column  ">
                         <div class=""><img src="./image/icons/header-short-img.png" alt=""
                                 class="img-fluid w-50 d-block "></div>
-                        <div class=""><img src="./image/icons/football.png" alt=""
+                        <div class="football-bg"><img src="./image/icons/football.png" alt=""
                                 class="img-fluid w-50 d-block float-end  "></div>
                     </div>
                 </div>
@@ -50,9 +50,9 @@
         </div>
     </header>
 
-    <main class="container  my-5 py-5 d-flex">
-        <div class="col-9">
-            <div class="row row-cols-1 row-cols-md-3 g-4 me-4">
+    <main class="container  my-5 py-5 d-lg-flex ">
+        <div class="col-12 col-lg-9">
+            <div class="row row-cols-1 row-cols-md-3 g-4  mx-auto   me-lg-4 ">
                 <!--start single card  -->
                 <div class="col">
                     <div class="card bg-dark text-white border border border-secondary">
@@ -181,7 +181,7 @@
         <!-- ASide Section -->
 
 
-        <div class="col-3 text-white">
+        <div class="col-12 col-lg-3 text-white">
             <!-- aside one  -->
             <div class="row bg-black ms-1">
                 <div class="p-3">
@@ -202,7 +202,7 @@
 
             </div>
             <!-- aside two  -->
-            <div class="row bg-black  ms-1 mt-5">
+            <div class="row bg-black  ms-0 ms-lg-1 mt-5">
                 <div class="p-3">
                     <!-- aside header  -->
                     <div class="">
@@ -215,32 +215,32 @@
                             <!-- per player count  -->
                             <div class="d-flex justify-content-between  align-item-center ">
                                 <p class="text-secondary me-2 mb-0 fw-semibold">Per Player</p>
-                                <input id="per-player-input" placeholder="1000" class="w-25 input text-info bg-black border p-1" type="text" name="">
+                                <input id="per-player-input" placeholder="$0000" class="w-25 input text-info bg-black border p-1" type="text" name="">
                             </div>
                             <button id="player-calculate" class="btn btn-info fw-bold text-white d-block w-100 rounded-0 mt-3">Calculate</button>
                             <!-- player expenses  -->
                             <div class="d-flex justify-content-between  align-item-center my-3 ">
                                 <p class="text-secondary me-2 mb-0 fw-semibold">Player Expenses</p>
-                                <p>$ <span>5000</span></p>
+                                <p>$ <span id="player-expenses">0000</span></p>
                             </div>
 
                             <!-- Manager  -->
                             <div class="d-flex justify-content-between  align-item-center my-3">
                                 <p class="text-secondary me-2 mb-0 fw-semibold">Manager</p>
-                                <input id="manager-input" placeholder="2000" class="w-25 input text-info bg-black border p-1" type="text" name="">
+                                <input id="manager-input" placeholder="$0000" class="w-25 input text-info bg-black border p-1" type="text" name="">
                             </div>
 
                             <!-- Coach  -->
                             <div class="d-flex justify-content-between  align-item-center my-3">
                                 <p class="text-secondary me-2 mb-0 fw-semibold">Coach</p>
-                                <input id="coach-input" placeholder="4000" class="w-25 input text-info bg-black border p-1" type="text" name="">
+                                <input id="coach-input" placeholder="$0000"  class="w-25 input text-info bg-black border p-1" type="text" name="">
                             </div>
                             <!-- Calculating Total button  -->
-                            <button id="player-calculate" class="btn btn-info fw-bold text-white d-block w-100 rounded-0 mt-3">Calculate Total</button>
+                            <button id="total-calculate" class="btn btn-info fw-bold text-white d-block w-100 rounded-0 mt-3">Calculate Total</button>
                             <!-- Total   -->
                             <div class="d-flex justify-content-between  align-item-center my-3 ">
                                 <p class="text-secondary me-2 mb-0 fw-semibold text-warning">Total</p>
-                                <p>$ <span>11000</span></p>
+                                <p>$ <span id="total-holder">0000</span></p>
                             </div>
                     
 
